@@ -13382,3 +13382,11 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+.row{
+  display: flex ;
+  flex-direction: row;
+  width: 100%;
+  
+  justify-items: center;
+  justify-content: center; 
+}

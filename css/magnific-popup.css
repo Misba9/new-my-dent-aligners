@@ -349,3 +349,8 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
+    .video-box ftco-animate{
+      display: flex;
+      justify-content: center;
+      border-radius: 20%;
+    }
