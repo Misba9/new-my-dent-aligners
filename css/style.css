@@ -13385,8 +13385,7 @@ textarea.form-control {
 .row{
   display: flex ;
   flex-direction: row;
-  width: 100%;
-  
+  /* width: 100%; */
   justify-items: center;
   justify-content: center; 
 }
@@ -13425,3 +13424,139 @@ textarea.form-control {
 .nav-item:hover .dropdown-menu {
   display: block;
 }
+
+.video-box {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 33%;
+  max-width: 33%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width: 975px) {
+  .video-box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 615px) {
+  .video-box {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-box {
+  flex: 1 1 30%;
+  max-width: 30%;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-box h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-info {
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 975px) {
+  .video-box {
+      flex: 1 1 45%;
+      max-width: 45%;
+  }
+}
+
+@media (max-width: 615px) {
+  .video-box {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
+/* video box end */
+/* pricing */
+.pricing-section {
+  background-color: blanchedalmond;
+  padding: 50px 0;
+}
+
+.pricing-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-primary {
+  background: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.pricing-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* pricing end */
